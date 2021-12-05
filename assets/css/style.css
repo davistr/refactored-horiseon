@@ -1,3 +1,4 @@
+/*Set no margin/padding for all elements (unless specified elsewhere)*/
 * {
     box-sizing: border-box;
     padding: 0;
@@ -7,7 +8,7 @@
 body {
     background-color: #d9dcd6;
 }
-/*Changed all below rules from use of header class to header element selector*/
+/*Changed all below rules from use of header class to header semantic element selector*/
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -19,8 +20,8 @@ header h1 {
     display: inline-block;
     font-size: 48px;
 }
-
-header h1 .seo {
+/*updated class element selector to ID for specificity*/
+#seo {
     color: #d9dcd6;
 }
 
@@ -84,12 +85,12 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
-/*Consolidated multiple benefit rules into one that can be applied to each div*/
+/*Consolidated multiple benefit rules for singular rule*/
 .benefits-info {
     margin-bottom: 32px;
     color: #ffffff;
 }
-/*Consolidated three benefit class rules for headers within */
+/*Consolidated three benefit class rules for singular rule*/
 .benefits-info h3 {
     margin-bottom: 10px;
     text-align: center;
@@ -100,7 +101,7 @@ p {
     margin: 10px auto;
     max-width: 150px;
 }
-/*Consolidated three benefit class rules for benefits divs*/
+/*Consolidated three benefit class rules for singular features class*/
 .features {
     margin-bottom: 20px;
     padding: 50px;
@@ -118,7 +119,6 @@ p {
     margin-bottom: 20px;
     font-size: 36px;
 }
-
 /*changed rule from .footer class to footer element */
 footer {
     padding: 30px;
